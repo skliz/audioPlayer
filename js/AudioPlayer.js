@@ -42,7 +42,7 @@ export class AudioPlayer {
 			this.nextSong()
 		})
 	}
-	// -------------------------------------------------------------------------------------------------------------
+	
 	// load
 	loadSong(song) {
 		this.playerSong.textContent = song
