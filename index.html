@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+	<title>AudioPlayer</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="main">
+			<div class="main__container container">
+				<div class="player" id="player">
+					<h1 class="player__title title">player</h1>
+					<canvas class="player__canvas" id="canvas"></canvas>
+					<div class="player__cover">
+						<img src="img/mp3player.png" alt="player" id="player-image">
+					</div>
+					<div class="player__content">
+						<span class="player__song" id="player-song">Music</span>
+					</div>
+					<div class="player__progress" id="progress-container">
+						<span class="progress" id="progress"></span>
+					</div>
+					<audio src="audio/Asia.mp3" id="audio"></audio>
+					<div class="player__buttons">
+						<button class="player__btn player__btn-prev icon-prev" id="btn-prev"></button>
+						<button class="player__btn player__btn-play icon-play" id="btn-play"></button>
+						<button class="player__btn player__btn-next icon-next" id="btn-next"></button>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+	<script type="module" src="js/script.js"></script>
+</body>
+
+</html>
