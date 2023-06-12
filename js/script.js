@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
 	const audio = document.getElementById('audio')
 	const ctx = canvas.getContext('2d')
 	const columnGap = 2
-	const columnCount = 256 // Кол-во колонок: 1024, 512, 256, 128, 64
+	const columnCount = 128 // Кол-во колонок: 1024, 512, 256, 128, 64
 
 	let audioCtx = new (window.AudioContext || window.webkitAudioContext)()
 	let source = audioCtx.createMediaElementSource(audio)
